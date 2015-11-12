@@ -26,3 +26,6 @@ if has('gui_running')
     source ~/.gvimrc.after
   endif
 end
+
+autocmd VimEnter * :NERDTree
+colorscheme railscasts

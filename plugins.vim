@@ -29,8 +29,8 @@ nmap <leader>/ :call NERDComment(0, "invert")<cr>
 vmap <leader>/ :call NERDComment(0, "invert")<cr>
 
 " ,t to show tags window
-let Tlist_Show_Menu=1
-nmap <leader>t :TlistToggle<CR>
+"let Tlist_Show_Menu=1
+"nmap <leader>t :TlistToggle<CR>
 
 " sessionman
 nmap <leader>S :SessionList<CR>

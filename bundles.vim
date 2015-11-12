@@ -9,7 +9,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " plugin management
 NeoBundleFetch 'Shougo/neobundle.vim'
-
+" Tabular
+NeoBundle 'godlygeek/tabular'
 " file tree
 NeoBundle 'scrooloose/nerdtree'
 " file tree and tabs interaction
@@ -22,6 +23,8 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'AutoComplPop'
 " tags list navigation
 NeoBundle 'taglist.vim'
+"Python support
+NeoBundle 'klen/python-mode'
 " yank history
 NeoBundle 'YankRing.vim'
 " git integration
@@ -45,7 +48,7 @@ NeoBundle 'bling/vim-airline'
 " plugin for resolving three-way merge conflicts
 NeoBundle 'sjl/splice.vim'
 " plugin for visually displaying indent levels
-NeoBundle 'Indent-Guides'
+"NeoBundle 'Indent-Guides'
 " end certain structures automatically, e.g. begin/end etc.
 NeoBundle 'tpope/vim-endwise'
 " automatic closing of quotes, parenthesis, brackets, etc.
@@ -98,13 +101,14 @@ NeoBundle 'tpope/vim-vividchalk'
 NeoBundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " syntax support
+NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tsaleh/vim-tmux'
 NeoBundle 'Puppet-Syntax-Highlighting'
 NeoBundle 'JSON.vim'
 NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'tpope/vim-markdown'
+"NeoBundle 'tpope/vim-markdown'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vitaly/vim-syntastic-coffee'
 NeoBundle 'vim-scripts/jade.vim'
@@ -117,7 +121,7 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mtscout6/vim-cjsx'
 NeoBundle 'vitaly/vim-literate-coffeescript'
-NeoBundle 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
+NeoBundle 'rust-lang/rust.vim'
 
 " clojure
 "NeoBundle 'VimClojure'
@@ -156,6 +160,9 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'lervag/vimtex'
+NeoBundle 'jcfaria/Vim-R-plugin'
+NeoBundle 'takac/vim-spotifysearch'
 
 call neobundle#end()
 

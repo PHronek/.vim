@@ -16,7 +16,7 @@ if has('multi_byte')
 end
 
 " presentation settings
-set number              " precede each line with its line number
+set relativenumber              " precede each line with its line number
 set numberwidth=3       " number of culumns for line numbers
 set textwidth=0         " Do not wrap words (insert)
 set nowrap              " Do not wrap words (view)
@@ -29,6 +29,8 @@ set laststatus=2        " always show the status line
 "set listchars=tab:▷⋅,trail:·,eol:$
 set listchars=tab:▷⋅,trail:·
 set list
+set scrolloff=4
+set colorcolumn=80
 
 " highlight spell errors
 hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
@@ -51,9 +53,10 @@ set modelines=5         " number of lines to check for vim: directives at the st
 "set fixdel                 " fix terminal code for delete (if delete is broken but backspace works)
 set autoindent          " automatically indent new line
 
-set ts=4                " number of spaces in a tab
-set sw=4                " number of spaces for indent
-set et                  " expand tabs into spaces
+set ts=2                " number of spaces in a tab
+set sw=2                " number of spaces for indent
+set expandtab
+"set et                  " expand tabs into spaces
 
 set ttimeoutlen=50      " fast Esc to normal mode
 
@@ -95,3 +98,5 @@ runtime macros/matchit.vim
 
 let mapleader = ","
 let maplocalleader = "\\"
+nnoremap <silent> <C-S> :w<CR>
+inoremap <silent> <C-s> <esc>:w<CR>
